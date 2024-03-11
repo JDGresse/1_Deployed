@@ -1,0 +1,57 @@
+﻿{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  Penny Stopforth
+{% endblock %}
+
+{% block content %}
+
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" data-bs-interval="3500" style="height: 580px;">
+      <div class="carousel-item active card">
+        <div class="card-img-overlay">
+          <h1 class="page-1-h1">Welcome to</h1>
+          <p class="page-1-p">Penny Stopforth Psychology</p>
+        </div>
+        <img src="{% static 'images/13.jpg' %}"  alt="pic-1" style="width: 100vw; max-height: 650px;">
+      </div>
+      <div class="carousel-item card">
+        <div class="card-img-overlay">
+          <h1 class="page-2-h1">Psychotherapy</h1>
+          <p class="page-2-owning">"Owning our</p>
+          <p class="page-2-story">STORY</p>
+          <p class="page-2-and">and loving our selves</p>
+          <p class="page-2-through">through the process</p>
+          <p class="page-2-is">is the</p>
+          <p class="page-2-bravest">BRAVEST</p>
+          <p class="page-2-thing">thing</p>
+          <p class="page-2-that">that we will ever do."</p>
+          <p class="page-2-bff">~ Brene Brown ~</p>
+        </div>
+        <img src="{% static 'images/22.jpg' %}" class="d-block w-100" alt="pic-2" style="width: 90vw; max-height: 600px;">
+      </div>
+      <div class="carousel-item card">
+        <div class="card-img-overlay">
+          <h1 class="page-3-h1">AD/HD</h1>
+          <p class="page-3-line-1">"Between what is said</p>
+          <p class="page-3-line-2">and not meant</p>
+          <p class="page-3-line-3">and what is meant</p>
+          <p class="page-3-line-4">and not said</p>
+          <p class="page-3-line-5">most love is lost</p>
+          <p class="page-3-quotee">~ Khalil Gibran ~</p>
+        </div>
+        <img src="{% static 'images/32.jpg' %}" class="d-block w-100" alt="pic-3" style="width: 90vw; max-height: 600px;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+{% endblock content %}

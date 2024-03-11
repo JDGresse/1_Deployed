@@ -1,0 +1,64 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block title %}Contact PSP{% endblock %}
+
+
+{% block content %}
+
+    <div style="display: flex;">
+        <div style="flex: 1;">
+            <img src="{% static 'images/meditation.jpg' %}" alt="Contact Me" style="margin-left: 110px; margin-top: 20px; width: 93%; ">
+        </div>
+
+        <div style="flex: 2; margin-left: 110px; margin-top: 20px;">
+            <div class="contact-form">
+                <form class="contact-psp" method="POST">
+                    {% csrf_token %}
+                    <div class="row-1">
+                        <div class="flex:1;" style="margin-right: 20px; width: 35%;">
+                            <label style="margin: 5px;">Your Name:</label>
+                            {% render_field form.your_name class+='form-control' %}
+                        </div>
+                        <div class="flex: 2;" style=" margin-right: 20px; width: 35%;">
+                            <label style="margin: 5px;">Your Email:</label>
+                            {% render_field form.email class+='form-control' %}
+                        </div>
+                        <div class="flex: 3;" style="margin-right: 20px">
+                            <label style="margin: 5px;">Contact Number:</label>
+                            {% render_field form.contact_number class+='form-control' %}
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <div class="flex: 1;" style="margin-right: 20px; width: 60%;">
+                            <label style="margin: 5px; ">Subject:</label>
+                            {% render_field form.subject class+='form-control' %}
+                        </div>
+                        <div class="flex: 2;" style="width: 35%;">
+                            <label style="margin: 5px;">Select a Service:</label>
+                            {% render_field form.service class+='form-control' %}
+                        </div>
+                    </div>
+                    <div class="row-3">
+                        <div class="flex: 1;" style="width: 98%;">
+                            <label style="margin: 5px;">Your Message:</label >
+                            {% render_field form.message class+='form-control' %}
+                        </div>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="responseMessage">
+                    {% if messages %}
+                        <ul class="messages">
+                            {% for message in messages %}
+                            <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

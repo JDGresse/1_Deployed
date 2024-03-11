@@ -1,0 +1,473 @@
+/* HTML ELEMENTS */
+body {
+    padding: 0;
+	line-height: 1.8;
+    font-size: 16px;
+	font-family: 'Lato', sans-serif;
+    background-color: white !important;
+    line-height: 1.8;
+}
+
+h3 {
+    font-size: 26px;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+h3 span {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #777;
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 26px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+
+h4 span {
+    display: block;
+    font-size: 25px;
+    margin-top: 10px;
+    color: #3b3b3b;
+    text-transform: capitalize;
+    padding: 0 10px;
+}
+
+h4::before,
+h4::after {
+    content: "";
+    flex: 1;
+    border-bottom: 15px solid #a19c9c46;
+    padding-top: 15px;
+}
+
+/* Variable margin classes */
+
+.base-margin {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.large-margin {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.small-margin {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header {
+    background-color: white !important;
+}
+
+ul {
+  list-style: none; /* Remove default bullet */
+}
+
+.experience::before {
+  content: url("static/images/icons/bookmark-star-fill.svg"); /* Add your icon path */
+  margin-right: 10px; /* Adjust spacing between icon and text */
+}
+
+.experience {
+  line-height: 44px;
+  font-size: 20px;
+  background-color: #1ABC9C; /* Set your desired background color */
+  padding: 5px; /* Add padding for better visibility */
+  font-weight: 800;
+}
+
+.line::before {
+  content: "";
+  width: 20%;
+  height: 5px;
+  display: inline-flex;
+  position: absolute;
+  top: 50%;
+}
+
+.list-blurb li::before {
+  content: "\2022"; /* Unicode for bullet */
+  color: #1ABC9C; /* Change bullet color */
+  font-size: 16px; /* Change bullet size */
+  margin-right: 5px; /* Add space between bullet and text */
+}
+
+.bg-body-tertiary {
+    background-color: white !important;
+}
+
+/* HTML MENU HEADER */
+
+.htmlmenu-header *,
+.htmlmenu-header *:before,
+.htmlmenu-header *:after {
+    box-sizing: border-box;
+}
+
+/* HTML MENU CONTAINER */
+
+.htmlmenu-container {
+    position: relative;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: auto;
+    max-width: 1280px;
+    background-color: #ffffff00 !important;
+}
+
+/* HTML MENU HEADER SHADOW */
+
+.htmlmenu-header-shadow {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.htmlmenu-header-shadow:before {
+    display: block;
+    position: relative;
+    content: "";
+    width: 100%;
+    height: 60px;
+    top: -60px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.08);
+}
+
+/* HTML MENU LOGO */
+
+.htmlmenu-logo {
+    padding: 0 0 0 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    position: relative;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 20px;
+    background-color: white !important;
+}
+
+.htmlmenu-logo a {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: white !important;
+}
+
+.htmlmenu-logo a img {
+
+    vertical-align: middle;
+    background-color: white !important;
+}
+
+
+/* NAVBAR */
+
+.nav-item {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container-fluid {
+    position: relative !important;
+    font-size: 15px;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+.navbar-nav .nav-item:hover {
+    background-color: #1ABC9C;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-item {
+    padding: 5px;
+    height: 70px;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: #1ABC9C;
+    border-radius: 5px;
+    color: azure;
+    padding: 10px;
+}
+
+
+/* CAROUSEL */
+
+.carousel-inner {
+    margin-top: 10px;
+}
+
+
+/* CAROUSEL TEXT */
+
+/* PAGE 1 */
+.page-1-h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 6vw;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+
+.page-1-p {
+    font-size: 4vw;
+    position: absolute;
+    top: 72%;
+    left: 25%;
+}
+
+/* PAGE 2 */
+.page-2-h1 {
+    font-family: 'Lato', sans-serif; font-size: 4vw;
+    position: absolute;
+    top: 2%;
+    left: 40%;
+}
+
+.page-2-owning {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.page-2-story {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    position: absolute;
+    top: 20%;
+    left: 59%;
+    color: #a52929;
+    font-style: italic;
+    font-weight: 550;
+}
+
+.page-2-and {
+    font-family: 'Allura';
+    font-size: 4.5vw;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+}
+
+.page-2-through {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    position: absolute;
+    top: 43%;
+    left: 53%;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.page-2-is {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    position: absolute;
+    top: 56%;
+    left: 55%;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.page-2-bravest {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    position: absolute;
+    top: 56%;
+    left: 63%;
+    color: #a52929;
+    font-style: italic;
+    font-weight: 550;
+}
+
+.page-2-thing {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    position: absolute;
+    top: 56%;
+    left: 77%;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.page-2-that {
+    font-family: 'Allura';
+    font-size: 4vw;
+    position: absolute;
+    top: 66%;
+    left: 52%;
+}
+
+.page-2-bff {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    position: absolute;
+    top: 80%;
+    left: 75%;
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* PAGE 3 */
+.page-3-h1 {
+    font-family: 'Lato', sans-serif; font-size: 4vw;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    color: white !important;
+    font-weight: 600;
+}
+
+.page-3-line-1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    font-style: italic;
+    font-weight: 600;
+    color: white !important;
+}
+
+.page-3-line-2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    font-style: italic;
+    font-weight: 600;
+    color: white !important;
+}
+
+.page-3-line-3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    font-style: italic;
+    font-weight: 600;
+    color: white !important;
+}
+
+.page-3-line-4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    font-style: italic;
+    font-weight: 600;
+    color: white !important;
+}
+
+.page-3-line-5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    font-style: italic;
+    font-weight: 600;
+    color: white !important;
+}
+
+.page-3-quotee {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+    position: absolute;
+    top: 70%;
+    right: 15%;
+    font-style: italic;
+    font-weight: 700;
+    color: white !important;
+}
+
+/* CONTACT FORM */
+
+.contact-form {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: 'Lato', san-serif;
+    color:#000000;
+    font-size: 16px;
+    width: 87%;
+    margin: 5px;
+}
+
+.row-1, .row-2, .row-3 {
+    display: flex;
+    float: inline-start;
+    margin: 5px;
+    width: 100%;
+}
+
+.contact-form form input[type=submit] {
+    font-weight:bold;
+    background:#1ABC9C;
+    color:#fff;
+    padding:10px;
+    font-size: 16px;
+    text-transform:uppercase; 
+}
+.errorlist { 
+    color:#cc0033;
+    float:left;
+    clear:both;
+    padding-left:10px; 
+}
+
+.form-control {
+    background-color: #ededed;
+}
+.contact-form form button {
+    width: 98%;
+    padding: 8px;
+    background-color: #1ABC9C;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.contact-form form button:hover {
+    background-color: #1a9cbc;
+    color: black;
+    font-size: 16px;
+}

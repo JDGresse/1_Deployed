@@ -1,0 +1,33 @@
+﻿{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  About PSP
+{% endblock %}
+
+{% block content %}
+
+  <div style="display: flex;">
+    <div style="flex: 1;">
+        <img src="{% static 'images/penny.jpg' %}" alt="Penny Stopforth" style="margin-left: 110px; margin-top: 20px; max-width: 100%; height: auto;">
+    </div>
+    <div style="flex: 2; margin-left: 130px; margin-right: 40px; margin-top: 20px;">
+      <h3>
+        PENNY STOPFORTH
+
+        <span>BSocSci, BSocSci (Hons), MA Clinical Psychology</span>
+      </h3>
+      <br/>
+
+      <p>
+        <span>
+        I am a registered Clinical Psychologist with the Health Professions Council of South Africa. My practice is situated in Paardevlei, Somersert West, Cape Town. Here, I offer in person and online individual psychotherapy to adults, as well as to adolescents, with a variety of presenting problems.
+        <br></br>
+        I integrate trauma-informed, mindfulness-based techniques to cultivate the connection between mind and body. This approach relies on prioritizing an authentic and collaborative therapeutic relationship, which is ultimately the catalyst for promoting therapeutic change and enhancing psychological wellbeing.
+        </span>
+      </p>
+      <br></br>
+    </div>
+  </div>
+
+{% endblock content %}
