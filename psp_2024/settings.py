@@ -34,7 +34,7 @@ ALLOWED_HOSTS = [
     "www.helderbergtherapy.co.za",
     "www.neurodivergentsupport.com",
     "helderbergtherapy.co.za",
-    "capetowntherpay.co.za",
+    "capetowntherapy.co.za",
     "www.capetowntherapy.co.za",
     "127.0.0.1",
 ]
